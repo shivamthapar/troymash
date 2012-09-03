@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<link rel="shortcut icon" href="icons/favicon.ico">
+	<meta name="description" content="Troy High Id Photos">
+	<meta name="keywords" content="id photo,">
+	<link href="app.css" rel="stylesheet">
+	<script src="script.js"></script>
+	<title>ID PHOTO</title>
+</head>
+<body>
+	<div id="container">
+		<div id="outputContainer">
+			<div id="photoField">
+				<img id="idImage" src="img/0.jpeg" alt="" width="200" height="250">
+			</div>
+			<!-- NOT USED ANYMORE
+			<div id="idNumberField">
+				<p id="idString">0</p>
+			</div>
+			-->
+		</div>
+		<div id="inputField">
+			<!-- FORM -->
+			<p>Id Number:
+				<input id="idNumberInput" type="tel" name="idNumber" size="7" maxlength="5">
+				<button class="searchButton" onclick="showSearchResult()" value="search">&nbsp<img src="img/search.png" width="16" height="16" alt="search"/>&nbsp</button>
+			</p>
+			<!-- or -->
+			<p>-----------------OR-----------------</p>
+			<!-- RANDOM -->
+			<button class="randomButton" onclick="showRandom()" value="random">Random</button>
+		</div>
+	</div>
+</body>
+</html>
